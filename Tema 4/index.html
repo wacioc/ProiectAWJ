@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html ng-app="blog">
+<head>
+  <title>AWJ - Homework 4</title>
+  <link rel="stylesheet" media="all" href="css/bootstrap.min.css">
+  <link rel="stylesheet" media="all" href="css/custom.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">AWJ Base Project</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#car">Car</a></li>
+            <li><a href="#book">Book</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <hr/>
+
+  <div class="container">
+    <div ng-controller="HomeController">
+      <h1>{{ helloWorld }}</h1>
+    </div>
+  </div>
+
+  <hr/>
+
+  <!-- /resources1 -->
+  <div class="container">
+    <h1 id="car">Car</h1>
+    <h2>List all Cars</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>Marca</th>
+        <th>Culoare</th>
+        <th>Motor</th>
+        <th>Pret</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>Dacia</td>
+        <td>Blue</td>
+        <td>1.6L</td>
+        <td>8999 &euro;</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Renault</td>
+        <td>Black</td>
+        <td>1.4L</td>
+        <td>11000 &euro;</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>BMW</td>
+        <td>White</td>
+        <td>3.2L</td>
+        <td>45999 &euro;</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Peugeot</td>
+        <td>Cyan</td>
+        <td>1.2L</td>
+        <td>12000 &euro;</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Edit a Car</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Marca</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Marca">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Culoare</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Culoare">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Motor</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Motor">
+          </div>
+          <div class="form-group">
+            <label for="attribute4">Pret</label>
+            <input type="text" class="form-control" id="attribute4" placeholder="Pret">
+          </div>
+          <button type="submit" class="btn btn-info">Save</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Add a Car</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Marca</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Marca">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Culoare</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Culoare">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Motor</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Motor">
+          </div>
+          <div class="form-group">
+            <label for="attribute4">Pret</label>
+            <input type="text" class="form-control" id="attribute4" placeholder="Pret">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Show a Car</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6LyhIU6A2apzUp41hbmyVqUjF7YeNXOfmV0-IfInSuq6McBow" class="img-thumbnail"/>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <!-- /resources2-->
+  <div class="container">
+    <h1 id="book">Book</h1>
+    <h2>List all Books</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>Grey</td>
+        <td>E.L. James</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Hamle</td>
+        <td>William Shakespeare</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Cei trei muschetari</td>
+        <td>Alexandre Dumas</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Mizerabilii</td>
+        <td>Victor Hugo</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Edit a Book</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Name</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Author</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Author">
+          </div>
+          <button type="submit" class="btn btn-info">Save</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Add a Book</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Name</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Author</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Author">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Show a Book</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://pngimg.com/upload/book_PNG2116.png" class="img-thumbnail"/>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="container">
+    <footer class="footer">
+      <p class="text-muted pull-left">AWJ Homework 4</p>
+      <p class="text-muted pull-right">Ene Mircea, 334AA</p>
+    </footer>
+  </div>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
